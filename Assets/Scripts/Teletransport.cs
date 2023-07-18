@@ -10,7 +10,7 @@ public class Teletransport : MonoBehaviour
     
 
     private void OnTriggerEnter(Collider other){
-                if(other.tag == "Reticle"){
+                if(other.tag == "Player"){
                 print("hello");
                 player.transform.position = target.transform.position;
                 }
