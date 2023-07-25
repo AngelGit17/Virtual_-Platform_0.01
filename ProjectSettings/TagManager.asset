@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Reticle
+  - Loading Screen
   layers:
   - Default
   - TransparentFX

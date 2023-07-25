@@ -23,9 +23,8 @@ public class HitboxInfo : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "alexa"){
-        test = "Nuestros modelos de casas inteligentes cuentan con un dispositivo Alexa el cual provee a los usuarios con la opcion de control por voz de operaciones como encender la luz, o activar la alarma.";
-        panel.SetActive (true);
+        if(other.tag == "Loading Screen"){
+        print("hello");
         }
 
         else if(other.tag == "modem"){
