@@ -7,6 +7,10 @@ TagManager:
   - CinemachineTarget
   - Reticle
   - Loading Screen
+  - TriggerUp
+  - Comedor
+  - Planta1
+  - Juntas
   layers:
   - Default
   - TransparentFX
