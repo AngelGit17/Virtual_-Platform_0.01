@@ -26,7 +26,12 @@ public class ChangeScene : MonoBehaviour
         sign.SetActive(true);
         print("hello");
         }
+        if(other.tag == "Entrada"){
+        // Add scene info to the same scene SceneManager.LoadScene("Planta1", LoadSceneMode.Additive);
         
+        SceneManager.LoadScene("Entrada");
+        //print("hiEntrada");
+        }
         if(other.tag == "Comedor"){
         // Add scene info to the same scene SceneManager.LoadScene("Planta1", LoadSceneMode.Additive);
         

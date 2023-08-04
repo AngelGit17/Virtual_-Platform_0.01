@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pisos/Loading screen.unity
     guid: ecadd2492b0b37b4daf73b9b99b72dba
+  - enabled: 1
+    path: Assets/Scenes/Pisos/Entrada.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

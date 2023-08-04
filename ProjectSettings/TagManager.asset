@@ -11,6 +11,12 @@ TagManager:
   - Comedor
   - Planta1
   - Juntas
+  - Plastic
+  - Metal
+  - Concrete
+  - Wood
+  - Brick
+  - Entrada
   layers:
   - Default
   - TransparentFX
