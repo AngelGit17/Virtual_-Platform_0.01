@@ -9,6 +9,9 @@ public class ChangeScene : MonoBehaviour
 {
     public GameObject sign;
     public GameObject canvas;
+    public GameObject piso;
+    public float Counter = 0.8f;
+    public bool TimerOn = false;
 
     //public Text text1;
 
@@ -17,6 +20,8 @@ public class ChangeScene : MonoBehaviour
     {
         sign.SetActive(false);
         canvas.SetActive(false);
+        piso.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -28,7 +33,7 @@ public class ChangeScene : MonoBehaviour
         
         //SceneManager.LoadScene("Loading screen");
         sign.SetActive(true);
-        canvas.SetActive(true);
+        piso.SetActive(true);
 
         print("hello");
         }
@@ -63,12 +68,35 @@ public class ChangeScene : MonoBehaviour
     {
         if(others.tag == "TriggerUp"){
         sign.SetActive(false);
+        piso.SetActive(false);
         }
     }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)){
-        canvas.SetActive(true);        
+        canvas.SetActive(true);
+        TimerOn = true;
         }
+
+        if(TimerOn){
+            if (Counter > 0)
+            {
+                Counter -= Time.deltaTime;
+            }
+        //Counter = 1;
+        //print(Counter);
+        }else if (Counter <=0) {
+            TimerOn = false;
+        }
+
+        
+        if(Input.GetKeyDown(KeyCode.Space) && Counter <= 0){
+        canvas.SetActive(false);  
+        Counter = 0.8f;
+        //Counter = 0;
+        //print(Counter);
+        }
+
+        
     }
 }
