@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public GameObject sign;
+    //public GameObject sign;
     public GameObject canvas;
     public GameObject piso;
     public float Counter = 0.8f;
@@ -18,7 +18,7 @@ public class ChangeScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sign.SetActive(false);
+        //sign.SetActive(false);
         canvas.SetActive(false);
         piso.SetActive(false);
 
@@ -32,7 +32,7 @@ public class ChangeScene : MonoBehaviour
         // Add scene info to the same scene SceneManager.LoadScene("Planta1", LoadSceneMode.Additive);
         
         //SceneManager.LoadScene("Loading screen");
-        sign.SetActive(true);
+        //sign.SetActive(true);
         piso.SetActive(true);
 
         print("hello");
@@ -67,7 +67,7 @@ public class ChangeScene : MonoBehaviour
     private void OnTriggerExit(Collider others)
     {
         if(others.tag == "TriggerUp"){
-        sign.SetActive(false);
+        //sign.SetActive(false);
         piso.SetActive(false);
         }
     }
