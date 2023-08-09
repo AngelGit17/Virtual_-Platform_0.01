@@ -21,13 +21,18 @@ public class Menu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Alpha4)){
         print("0");
-        SceneManager.LoadScene("Entrada");
+        SceneManager.LoadScene("Incendio");
         canvas.SetActive(false);
 
         }
         if(Input.GetKeyDown(KeyCode.Alpha5)){
         print("1");
-        SceneManager.LoadScene("Comedor");
+        SceneManager.LoadScene("Sismo");
+        canvas.SetActive(false);
+
+        }
+        if(Input.GetKeyDown(KeyCode.Escape)){
+        SceneManager.LoadScene("Planta1");
         canvas.SetActive(false);
 
         }
