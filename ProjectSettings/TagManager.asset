@@ -17,6 +17,7 @@ TagManager:
   - Wood
   - Brick
   - Entrada
+  - Flechas
   layers:
   - Default
   - TransparentFX
